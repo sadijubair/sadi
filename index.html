@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chemistry Teacher & Mentor - Expert guidance for HSC, Undergrad, BCS & Government Job Exams">
+    <title>Chemistry Teacher & Mentor | HSC, BCS & Job Exam Expert</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/60 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold gradient-text">Chemistry Mentor</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    
+                    <!-- Dropdown Menu -->
+                    <div class="relative dropdown">
+                        <button class="nav-link flex items-center gap-1" id="dropdown-btn">
+                            Courses
+                            <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="dropdown-menu hidden absolute top-full right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
+                            <a href="#courses" class="dropdown-item">
+                                <i class="fas fa-graduation-cap text-purple-600"></i>
+                                <span>HSC Chemistry</span>
+                            </a>
+                            <a href="#courses" class="dropdown-item">
+                                <i class="fas fa-university text-blue-600"></i>
+                                <span>Undergraduate</span>
+                            </a>
+                            <a href="#courses" class="dropdown-item">
+                                <i class="fas fa-briefcase text-green-600"></i>
+                                <span>BCS Preparation</span>
+                            </a>
+                            <div class="border-t border-gray-100 my-2"></div>
+                            <a href="#courses" class="dropdown-item">
+                                <i class="fas fa-building text-orange-600"></i>
+                                <span>Bank Jobs</span>
+                            </a>
+                            <a href="#courses" class="dropdown-item">
+                                <i class="fas fa-landmark text-indigo-600"></i>
+                                <span>Govt Jobs</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="#testimonials" class="nav-link">Reviews</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="#contact" class="btn-primary">Book a Class</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                
+                <!-- Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-nav-link w-full text-left flex items-center justify-between" id="mobile-dropdown-btn">
+                        <span>Courses</span>
+                        <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                    </button>
+                    <div class="mobile-dropdown-menu hidden pl-4 mt-1 space-y-1">
+                        <a href="#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-graduation-cap text-purple-600"></i>
+                            <span>HSC Chemistry</span>
+                        </a>
+                        <a href="#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-university text-blue-600"></i>
+                            <span>Undergraduate</span>
+                        </a>
+                        <a href="#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-briefcase text-green-600"></i>
+                            <span>BCS Preparation</span>
+                        </a>
+                        <a href="#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-building text-orange-600"></i>
+                            <span>Bank Jobs</span>
+                        </a>
+                        <a href="#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-landmark text-red-600"></i>
+                            <span>Govt Jobs</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="#testimonials" class="mobile-nav-link">Reviews</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+                <a href="#contact" class="btn-primary block text-center mt-4">Book a Class</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section-xander">
+        
+        <!-- Content -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+                <!-- Left Content -->
+                <div class="text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        Let's Work Together to <span class="text-highlight">Create Excellence</span> in Chemistry
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-xl leading-relaxed">
+                        Expert Chemistry mentorship for HSC, BCS, and Government job exams. Adapt at turning complex concepts into extraordinary understanding.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mb-12 md:mb-16">
+                        <a href="#contact" class="btn-primary-new">
+                            <i class="fas fa-comments"></i>
+                            Let's Talk
+                        </a>
+                        <a href="#courses" class="btn-outline-new">
+                            <i class="fas fa-rocket"></i>
+                            Start Learning
+                        </a>
+                    </div>
+
+                    <!-- Stats Section -->
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">years<br>experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5K+</div>
+                            <div class="stat-label">students<br>success</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">satisfied<br>rate</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side: Profile Photo -->
+                <div class="relative flex justify-center items-center hero-image-container">
+                    <div class="hero-profile-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop&crop=faces" 
+                             alt="Chemistry Teacher" 
+                             class="hero-profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative Shapes -->
+        <div class="hero-shape hero-shape-1"></div>
+        <div class="hero-shape hero-shape-2"></div>
+        <div class="hero-shape hero-shape-3"></div>
+        <div class="hero-dots hero-dots-1"></div>
+        <div class="hero-dots hero-dots-2"></div>
+
+        <!-- Scroll Indicator -->
+        <a href="#about" class="scroll-indicator-light">
+            <div class="scroll-mouse-light">
+                <div class="scroll-wheel-light"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose Me?</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive Chemistry education and exam preparation with proven results
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon bg-purple-100 text-purple-600">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Expert Teaching</h3>
+                    <p class="text-gray-600">
+                        10+ years of experience teaching Chemistry to HSC and undergraduate students with proven methods.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon bg-blue-100 text-blue-600">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Practical Approach</h3>
+                    <p class="text-gray-600">
+                        Simplified explanations with real-world examples and practical applications for better understanding.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon bg-pink-100 text-pink-600">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Job Exam Prep</h3>
+                    <p class="text-gray-600">
+                        Specialized coaching for BCS, Bank, and Government job recruitment exams with targeted strategies.
+                    </p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon bg-green-100 text-green-600">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Personalized Mentoring</h3>
+                    <p class="text-gray-600">
+                        One-on-one attention and customized study plans tailored to each student's needs and goals.
+                    </p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon bg-yellow-100 text-yellow-600">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Study Materials</h3>
+                    <p class="text-gray-600">
+                        Comprehensive notes, practice questions, and resources for effective learning and revision.
+                    </p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon bg-indigo-100 text-indigo-600">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Proven Results</h3>
+                    <p class="text-gray-600">
+                        95% success rate with students achieving their academic and career goals in exams.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">My Courses</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Flexible course options designed for your success
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- HSC Chemistry -->
+                <div class="pricing-card">
+                    <div class="text-center mb-6">
+                        <div class="feature-icon bg-purple-100 text-purple-600 mx-auto">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 mt-4">HSC Chemistry</h3>
+                        <p class="text-gray-600">Complete board exam preparation</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Full syllabus coverage</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Board exam strategies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Practice papers & MCQs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Weekly assessments</span>
+                        </li>
+                    </ul>
+                    <button class="btn-secondary w-full">Enroll Now</button>
+                </div>
+                
+                <!-- BCS & Job Exams -->
+                <div class="pricing-card featured">
+                    <div class="badge">Most Popular</div>
+                    <div class="text-center mb-6">
+                        <div class="feature-icon bg-green-100 text-green-600 mx-auto">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 mt-4">BCS & Job Exams</h3>
+                        <p class="text-gray-600">Comprehensive exam preparation</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>BCS Chemistry syllabus</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Bank job preparation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Govt job strategies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Mock tests & solutions</span>
+                        </li>
+                    </ul>
+                    <button class="btn-primary w-full">Enroll Now</button>
+                </div>
+                
+                <!-- Undergraduate -->
+                <div class="pricing-card">
+                    <div class="text-center mb-6">
+                        <div class="feature-icon bg-blue-100 text-blue-600 mx-auto">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 mt-4">Undergraduate</h3>
+                        <p class="text-gray-600">University-level chemistry</p>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Advanced concepts</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Organic & Inorganic</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Physical Chemistry</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Lab work guidance</span>
+                        </li>
+                    </ul>
+                    <button class="btn-secondary w-full">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Recent Blog Posts</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Chemistry insights, study tips, and exam strategies
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Blog Post 1 -->
+                <div class="feature-card">
+                    <img src="https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&h=250&fit=crop" 
+                         alt="Chemistry blog" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="text-sm text-purple-600 font-semibold mb-2">HSC PREPARATION</div>
+                    <h3 class="text-xl font-semibold mb-3">Top 10 Tips for HSC Chemistry Exam</h3>
+                    <p class="text-gray-600 mb-4">
+                        Essential strategies to excel in your HSC Chemistry board exams with confidence.
+                    </p>
+                    <a href="#" class="text-purple-600 font-semibold hover:text-purple-700">Read More →</a>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="feature-card">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=250&fit=crop" 
+                         alt="BCS preparation" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="text-sm text-green-600 font-semibold mb-2">BCS EXAM</div>
+                    <h3 class="text-xl font-semibold mb-3">BCS Chemistry: Complete Guide</h3>
+                    <p class="text-gray-600 mb-4">
+                        Master the Chemistry portion of BCS exams with targeted preparation techniques.
+                    </p>
+                    <a href="#" class="text-purple-600 font-semibold hover:text-purple-700">Read More →</a>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="feature-card">
+                    <img src="https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=400&h=250&fit=crop" 
+                         alt="Organic chemistry" 
+                         class="w-full h-48 object-cover rounded-lg mb-4">
+                    <div class="text-sm text-blue-600 font-semibold mb-2">STUDY TIPS</div>
+                    <h3 class="text-xl font-semibold mb-3">Mastering Organic Chemistry</h3>
+                    <p class="text-gray-600 mb-4">
+                        Simplified approach to understanding organic chemistry concepts and reactions.
+                    </p>
+                    <a href="#" class="text-purple-600 font-semibold hover:text-purple-700">Read More →</a>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="#" class="btn-secondary">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section - Student Success Stories -->
+    <section id="testimonials" class="py-20 relative overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
+            <div class="absolute inset-0 opacity-20">
+                <div class="absolute top-20 left-20 w-72 h-72 bg-yellow-400 rounded-full filter blur-3xl animate-pulse"></div>
+                <div class="absolute bottom-20 right-20 w-96 h-96 bg-blue-400 rounded-full filter blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+                <div class="absolute top-1/2 left-1/2 w-80 h-80 bg-purple-400 rounded-full filter blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+            </div>
+            <!-- Subtle Pattern Overlay -->
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 40px 40px;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full text-sm font-semibold mb-6">
+                    <i class="fas fa-trophy text-yellow-400"></i>
+                    <span>Success Stories</span>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    Transforming Dreams Into
+                    <span class="block mt-2 bg-gradient-to-r from-yellow-400 via-orange-500 to-pink-500 bg-clip-text text-transparent">
+                        Real Success Stories
+                    </span>
+                </h2>
+                <p class="text-xl text-purple-200 max-w-3xl mx-auto">
+                    Join thousands of students who achieved their goals with expert guidance and proven teaching methods
+                </p>
+            </div>
+            
+            <!-- Testimonials Carousel -->
+            <div class="relative">
+                <div class="testimonial-carousel-container">
+                    <div class="testimonial-carousel" id="testimonial-carousel">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-slide active">
+                            <div class="testimonial-card-new">
+                                <!-- Achievement Badge -->
+                                <div class="achievement-badge">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>HSC A+</span>
+                                </div>
+                                
+                                <!-- Quote Mark -->
+                                <div class="quote-mark-new">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                
+                                <!-- Rating Stars -->
+                                <div class="flex items-center mb-6">
+                                    <div class="flex gap-1">
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                    </div>
+                                    <span class="ml-3 px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-bold">5.0</span>
+                                </div>
+                                
+                                <!-- Testimonial Text -->
+                                <p class="text-gray-100 text-lg md:text-xl leading-relaxed mb-8 font-light">
+                                    "Sir's teaching method made Chemistry so easy to understand! His practical examples and patient explanations helped me score <strong class="text-yellow-400">A+</strong> in my HSC exams. I couldn't have done it without his guidance. Highly recommended for all HSC students!"
+                                </p>
+                                
+                                <!-- Student Info -->
+                                <div class="flex items-center pt-6 border-t border-white/20">
+                                    <div class="testimonial-avatar-new">
+                                        <img src="https://i.pravatar.cc/150?img=1" alt="Fatima Rahman">
+                                        <div class="avatar-ring"></div>
+                                    </div>
+                                    <div class="ml-5">
+                                        <div class="font-bold text-xl text-white">Fatima Rahman</div>
+                                        <div class="text-yellow-400 font-semibold mt-1">HSC Student - A+ Grade</div>
+                                        <div class="text-purple-300 text-sm mt-1 flex items-center">
+                                            <i class="fas fa-map-marker-alt mr-1 text-xs"></i>
+                                            Dhaka College
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card-new">
+                                <!-- Achievement Badge -->
+                                <div class="achievement-badge">
+                                    <i class="fas fa-medal"></i>
+                                    <span>BCS Cadre</span>
+                                </div>
+                                
+                                <!-- Quote Mark -->
+                                <div class="quote-mark-new">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                
+                                <!-- Rating Stars -->
+                                <div class="flex items-center mb-6">
+                                    <div class="flex gap-1">
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                    </div>
+                                    <span class="ml-3 px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-bold">5.0</span>
+                                </div>
+                                
+                                <!-- Testimonial Text -->
+                                <p class="text-gray-100 text-lg md:text-xl leading-relaxed mb-8 font-light">
+                                    "Thanks to his guidance, I cracked the BCS exam on my <strong class="text-yellow-400">first attempt</strong>! His Chemistry preparation strategies were spot-on and very effective. The study materials and practice tests he provided were invaluable. Best investment I ever made!"
+                                </p>
+                                
+                                <!-- Student Info -->
+                                <div class="flex items-center pt-6 border-t border-white/20">
+                                    <div class="testimonial-avatar-new">
+                                        <img src="https://i.pravatar.cc/150?img=12" alt="Rakib Hasan">
+                                        <div class="avatar-ring"></div>
+                                    </div>
+                                    <div class="ml-5">
+                                        <div class="font-bold text-xl text-white">Rakib Hasan</div>
+                                        <div class="text-yellow-400 font-semibold mt-1">BCS Cadre - Rank 47</div>
+                                        <div class="text-purple-300 text-sm mt-1 flex items-center">
+                                            <i class="fas fa-trophy mr-1 text-xs"></i>
+                                            40th BCS
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card-new">
+                                <!-- Achievement Badge -->
+                                <div class="achievement-badge">
+                                    <i class="fas fa-university"></i>
+                                    <span>CGPA 3.92</span>
+                                </div>
+                                
+                                <!-- Quote Mark -->
+                                <div class="quote-mark-new">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                
+                                <!-- Rating Stars -->
+                                <div class="flex items-center mb-6">
+                                    <div class="flex gap-1">
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                    </div>
+                                    <span class="ml-3 px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-bold">5.0</span>
+                                </div>
+                                
+                                <!-- Testimonial Text -->
+                                <p class="text-gray-100 text-lg md:text-xl leading-relaxed mb-8 font-light">
+                                    "Best chemistry teacher! His personalized approach helped me excel in my university exams. Complex organic chemistry concepts became <strong class="text-yellow-400">crystal clear</strong>. Patient, knowledgeable, and always available to help. My GPA improved dramatically!"
+                                </p>
+                                
+                                <!-- Student Info -->
+                                <div class="flex items-center pt-6 border-t border-white/20">
+                                    <div class="testimonial-avatar-new">
+                                        <img src="https://i.pravatar.cc/150?img=5" alt="Nusrat Jahan">
+                                        <div class="avatar-ring"></div>
+                                    </div>
+                                    <div class="ml-5">
+                                        <div class="font-bold text-xl text-white">Nusrat Jahan</div>
+                                        <div class="text-yellow-400 font-semibold mt-1">Undergraduate - CGPA 3.92</div>
+                                        <div class="text-purple-300 text-sm mt-1 flex items-center">
+                                            <i class="fas fa-map-marker-alt mr-1 text-xs"></i>
+                                            Dhaka University
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card-new">
+                                <!-- Achievement Badge -->
+                                <div class="achievement-badge">
+                                    <i class="fas fa-building"></i>
+                                    <span>Bank Officer</span>
+                                </div>
+                                
+                                <!-- Quote Mark -->
+                                <div class="quote-mark-new">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                                
+                                <!-- Rating Stars -->
+                                <div class="flex items-center mb-6">
+                                    <div class="flex gap-1">
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                        <i class="fas fa-star text-yellow-400 text-lg"></i>
+                                    </div>
+                                    <span class="ml-3 px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-bold">5.0</span>
+                                </div>
+                                
+                                <!-- Testimonial Text -->
+                                <p class="text-gray-100 text-lg md:text-xl leading-relaxed mb-8 font-light">
+                                    "I got selected for <strong class="text-yellow-400">Senior Officer</strong> position in Sonali Bank! His targeted preparation for bank exams was incredible. The way he explains chemistry topics with shortcuts and tricks made everything so memorable. Forever grateful!"
+                                </p>
+                                
+                                <!-- Student Info -->
+                                <div class="flex items-center pt-6 border-t border-white/20">
+                                    <div class="testimonial-avatar-new">
+                                        <img src="https://i.pravatar.cc/150?img=8" alt="Mehedi Hossain">
+                                        <div class="avatar-ring"></div>
+                                    </div>
+                                    <div class="ml-5">
+                                        <div class="font-bold text-xl text-white">Mehedi Hossain</div>
+                                        <div class="text-yellow-400 font-semibold mt-1">Senior Officer - Sonali Bank</div>
+                                        <div class="text-purple-300 text-sm mt-1 flex items-center">
+                                            <i class="fas fa-calendar-check mr-1 text-xs"></i>
+                                            Selected 2024
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Controls -->
+                <button class="carousel-btn-new carousel-btn-prev-new" id="carousel-prev" aria-label="Previous testimonial">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn-new carousel-btn-next-new" id="carousel-next" aria-label="Next testimonial">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators-new" id="carousel-indicators">
+                    <button class="indicator-new active" data-slide="0" aria-label="Slide 1"></button>
+                    <button class="indicator-new" data-slide="1" aria-label="Slide 2"></button>
+                    <button class="indicator-new" data-slide="2" aria-label="Slide 3"></button>
+                    <button class="indicator-new" data-slide="3" aria-label="Slide 4"></button>
+                </div>
+            </div>
+            
+            <!-- Success Stats -->
+            <div class="grid md:grid-cols-4 gap-6 mt-20">
+                <div class="success-stat-card-new">
+                    <div class="success-stat-icon-new">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2 counter" data-target="500">0</div>
+                    <div class="text-purple-200 font-medium">Students Trained</div>
+                    <div class="stat-bar-new"></div>
+                </div>
+                <div class="success-stat-card-new">
+                    <div class="success-stat-icon-new">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">
+                        <span class="counter" data-target="98">0</span>%
+                    </div>
+                    <div class="text-purple-200 font-medium">Success Rate</div>
+                    <div class="stat-bar-new"></div>
+                </div>
+                <div class="success-stat-card-new">
+                    <div class="success-stat-icon-new">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">
+                        <span class="counter" data-target="4.9">0</span>/5
+                    </div>
+                    <div class="text-purple-200 font-medium">Average Rating</div>
+                    <div class="stat-bar-new"></div>
+                </div>
+                <div class="success-stat-card-new">
+                    <div class="success-stat-icon-new">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2 counter" data-target="200">0</div>
+                    <div class="text-purple-200 font-medium">Job Selections</div>
+                    <div class="stat-bar-new"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative overflow-hidden bg-gradient-to-br from-gray-50 via-purple-50 to-blue-50">
+        <!-- Decorative Elements -->
+        <div class="absolute top-0 left-0 w-96 h-96 bg-purple-200 rounded-full filter blur-3xl opacity-30 -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-200 rounded-full filter blur-3xl opacity-30 translate-x-1/2 translate-y-1/2"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-semibold mb-4">
+                    <i class="fas fa-calendar-check mr-2"></i>Book Your Spot
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Ready to Start Your <span class="text-gradient">Chemistry Journey?</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Join thousands of successful students. Book your first class today and experience expert teaching!
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-8 items-start">
+                <!-- Contact Info Cards -->
+                <div class="space-y-6">
+                    <!-- Why Choose Us -->
+                    <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                            <span class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fas fa-star text-white"></i>
+                            </span>
+                            Why Choose Us?
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-user-graduate text-purple-600 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-gray-900 mb-1">15+ Years Experience</h4>
+                                    <p class="text-gray-600 text-sm">Expert chemistry teaching with proven results</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-users text-blue-600 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-gray-900 mb-1">5,000+ Students</h4>
+                                    <p class="text-gray-600 text-sm">Join our community of successful learners</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-trophy text-green-600 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-gray-900 mb-1">98% Success Rate</h4>
+                                    <p class="text-gray-600 text-sm">Outstanding results in exams and competitions</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-clock text-orange-600 text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-gray-900 mb-1">Flexible Timing</h4>
+                                    <p class="text-gray-600 text-sm">Classes that fit your schedule</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Methods -->
+                    <div class="bg-gradient-to-br from-purple-600 to-blue-600 rounded-2xl shadow-xl p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-6">Quick Contact</h3>
+                        <div class="space-y-4">
+                            <a href="tel:+8801XXXXXXXXX" class="flex items-center p-4 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-all group">
+                                <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-phone-alt text-white text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm text-purple-200">Call Now</p>
+                                    <p class="font-semibold">+880 1XXX-XXXXXX</p>
+                                </div>
+                                <i class="fas fa-arrow-right ml-auto opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                            </a>
+                            <a href="mailto:info@chemistrymentor.com" class="flex items-center p-4 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-all group">
+                                <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
+                                    <i class="fas fa-envelope text-white text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm text-purple-200">Email Us</p>
+                                    <p class="font-semibold">info@chemistrymentor.com</p>
+                                </div>
+                                <i class="fas fa-arrow-right ml-auto opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                            </a>
+                            <a href="#" class="flex items-center p-4 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-all group">
+                                <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
+                                    <i class="fab fa-whatsapp text-white text-xl"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p class="text-sm text-purple-200">WhatsApp</p>
+                                    <p class="font-semibold">Chat with us</p>
+                                </div>
+                                <i class="fas fa-arrow-right ml-auto opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-10 border border-gray-100">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Send Us a Message</h3>
+                        <p class="text-gray-600">Fill out the form below and we'll get back to you within 24 hours</p>
+                    </div>
+                    
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="form-group">
+                                <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    <i class="fas fa-user text-purple-600 mr-1"></i> Full Name
+                                </label>
+                                <input type="text" 
+                                       id="name" 
+                                       name="name" 
+                                       required
+                                       class="form-input-new"
+                                       placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    <i class="fas fa-envelope text-purple-600 mr-1"></i> Email Address
+                                </label>
+                                <input type="email" 
+                                       id="email" 
+                                       name="email" 
+                                       required
+                                       class="form-input-new"
+                                       placeholder="john@example.com">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="form-group">
+                                <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    <i class="fas fa-phone text-purple-600 mr-1"></i> Phone Number
+                                </label>
+                                <input type="tel" 
+                                       id="phone" 
+                                       name="phone" 
+                                       class="form-input-new"
+                                       placeholder="+880 1XXX-XXXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    <i class="fas fa-graduation-cap text-purple-600 mr-1"></i> Course Interest
+                                </label>
+                                <select id="subject" 
+                                        name="subject" 
+                                        required
+                                        class="form-input-new">
+                                    <option value="">Select a course</option>
+                                    <option value="hsc">HSC Chemistry</option>
+                                    <option value="undergraduate">Undergraduate Chemistry</option>
+                                    <option value="bcs">BCS Preparation</option>
+                                    <option value="bank">Bank Job Preparation</option>
+                                    <option value="govt">Government Job Preparation</option>
+                                    <option value="other">Other/General Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                                <i class="fas fa-comment-dots text-purple-600 mr-1"></i> Your Message
+                            </label>
+                            <textarea id="message" 
+                                      name="message" 
+                                      rows="5" 
+                                      required
+                                      class="form-input-new"
+                                      placeholder="Tell us about your goals and how we can help you..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary-form group">
+                            <span class="flex items-center justify-center">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Send Message
+                                <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                            </span>
+                        </button>
+                    </form>
+                    
+                    <div id="form-message" class="hidden mt-4 p-4 rounded-lg"></div>
+                    
+                    <!-- Trust Indicators -->
+                    <div class="mt-8 pt-6 border-t border-gray-200">
+                        <div class="flex items-center justify-center gap-6 text-sm text-gray-500">
+                            <div class="flex items-center">
+                                <i class="fas fa-shield-alt text-green-600 mr-2"></i>
+                                Secure & Private
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-blue-600 mr-2"></i>
+                                24hr Response
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-purple-600 mr-2"></i>
+                                No Spam
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Main Footer Content -->
+            <div class="py-16 grid md:grid-cols-10 gap-8">
+                <!-- Brand Section - Larger -->
+                <div class="md:col-span-4">
+                    <div class="mb-6">
+                        <h3 class="text-3xl font-bold mb-3">
+                            <span class="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Chemistry</span>
+                            <span class="text-white"> Mentor</span>
+                        </h3>
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            Transforming chemistry education with passion and expertise. Join thousands of successful students in HSC, BCS, and Government job exams.
+                        </p>
+                    </div>
+                    
+                    <!-- Newsletter -->
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                        <p class="text-sm font-semibold mb-3">📧 Subscribe to Newsletter</p>
+                        <div class="flex gap-2">
+                            <input type="email" placeholder="Your email" class="flex-1 px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-sm text-white placeholder-gray-400 focus:outline-none focus:border-yellow-400">
+                            <button class="px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg text-gray-900 font-semibold text-sm hover:shadow-lg transition-all">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Courses -->
+                <div class="md:col-span-2">
+                    <h4 class="text-lg font-bold mb-4 flex items-center">
+                        <i class="fas fa-graduation-cap text-yellow-400 mr-2"></i>
+                        Courses
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="#courses" class="footer-link-new">HSC Chemistry</a></li>
+                        <li><a href="#courses" class="footer-link-new">Undergraduate</a></li>
+                        <li><a href="#courses" class="footer-link-new">BCS Preparation</a></li>
+                        <li><a href="#courses" class="footer-link-new">Bank Jobs</a></li>
+                        <li><a href="#courses" class="footer-link-new">Govt Jobs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div class="md:col-span-2">
+                    <h4 class="text-lg font-bold mb-4 flex items-center">
+                        <i class="fas fa-book text-yellow-400 mr-2"></i>
+                        Resources
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="footer-link-new">Study Materials</a></li>
+                        <li><a href="#" class="footer-link-new">Practice Tests</a></li>
+                        <li><a href="#" class="footer-link-new">Video Lectures</a></li>
+                        <li><a href="#" class="footer-link-new">Past Papers</a></li>
+                        <li><a href="#" class="footer-link-new">Notes & Tips</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="md:col-span-2">
+                    <h4 class="text-lg font-bold mb-4 flex items-center">
+                        <i class="fas fa-phone text-yellow-400 mr-2"></i>
+                        Contact
+                    </h4>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-yellow-400 mr-2 mt-1"></i>
+                            <span>Dhaka, Bangladesh</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-yellow-400 mr-2 mt-1"></i>
+                            <a href="mailto:info@chemistrymentor.com" class="hover:text-yellow-400 transition-colors">info@chemistrymentor.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-yellow-400 mr-2 mt-1"></i>
+                            <span>+880 1XXX-XXXXXX</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-yellow-400 mr-2 mt-1"></i>
+                            <span>Daily: 9AM - 9PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Social & Bottom Bar -->
+            <div class="border-t border-white/10 py-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <!-- Social Links -->
+                    <div class="flex items-center gap-4">
+                        <span class="text-sm text-gray-400">Follow us:</span>
+                        <div class="flex gap-3">
+                            <a href="#" class="social-link-new">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link-new">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link-new">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link-new">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link-new">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link-new">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Copyright -->
+                    <div class="text-center md:text-right">
+                        <p class="text-sm text-gray-400">
+                            &copy; 2025 <span class="text-yellow-400 font-semibold">Chemistry Mentor</span>. All rights reserved.
+                        </p>
+                        <p class="text-xs text-gray-500 mt-1">
+                            Empowering Students Since 2015 • Made with <span class="text-red-500">❤️</span> for Students
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

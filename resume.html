@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume - Chemistry Mentor | Professional Experience & Qualifications">
+    <title>Resume | Chemistry Mentor</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Resume Specific CSS -->
+    <link rel="stylesheet" href="resume.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased bg-gray-50">
+    
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/60 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold gradient-text">Chemistry Mentor</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                    <a href="index.html#about" class="nav-link">About</a>
+                    <a href="index.html#courses" class="nav-link">Courses</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="resume.html" class="nav-link active">Resume</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="contact.html" class="btn-primary">Book a Class</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
+                <a href="index.html#home" class="mobile-nav-link">Home</a>
+                <a href="index.html#about" class="mobile-nav-link">About</a>
+                <a href="index.html#courses" class="mobile-nav-link">Courses</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="resume.html" class="mobile-nav-link active">Resume</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="contact.html" class="btn-primary block text-center mt-4">Book a Class</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Resume Header -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-600 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <!-- Profile Image -->
+                <div class="resume-profile-wrapper mb-6">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=faces" 
+                         alt="Chemistry Mentor" 
+                         class="resume-profile-img">
+                    <div class="profile-ring"></div>
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl font-bold mb-3">Dr. Chemistry Mentor</h1>
+                <p class="text-xl md:text-2xl text-purple-200 mb-4">Chemistry Educator & Mentor</p>
+                <p class="text-lg text-purple-100 max-w-2xl mx-auto mb-8">
+                    Passionate about transforming complex chemistry concepts into clear, understandable knowledge for HSC, BCS, and Government job aspirants.
+                </p>
+                
+                <!-- Quick Actions -->
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <button onclick="downloadResume()" class="resume-btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download PDF
+                    </button>
+                    <button onclick="printResume()" class="resume-btn-secondary">
+                        <i class="fas fa-print"></i>
+                        Print Resume
+                    </button>
+                    <a href="contact.html" class="resume-btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Contact Me
+                    </a>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="flex flex-wrap justify-center gap-6 text-sm">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-envelope text-yellow-400"></i>
+                        <span>info@chemistrymentor.com</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-phone text-yellow-400"></i>
+                        <span>+880 1XXX-XXXXXX</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-yellow-400"></i>
+                        <span>Dhaka, Bangladesh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Content -->
+    <section class="py-16" id="resume-content">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-8">
+                
+                <!-- Left Column -->
+                <div class="lg:col-span-1 space-y-8">
+                    
+                    <!-- Skills -->
+                    <div class="resume-card">
+                        <div class="resume-card-header">
+                            <i class="fas fa-brain"></i>
+                            <h2>Skills & Expertise</h2>
+                        </div>
+                        <div class="resume-card-body">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Organic Chemistry</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Inorganic Chemistry</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Physical Chemistry</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Exam Preparation</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 98%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Student Mentoring</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 96%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Languages -->
+                    <div class="resume-card">
+                        <div class="resume-card-header">
+                            <i class="fas fa-language"></i>
+                            <h2>Languages</h2>
+                        </div>
+                        <div class="resume-card-body">
+                            <div class="language-item">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-semibold text-gray-800">Bengali</span>
+                                    <span class="text-sm text-purple-600 font-medium">Native</span>
+                                </div>
+                                <div class="flex gap-1">
+                                    <div class="language-dot active"></div>
+                                    <div class="language-dot active"></div>
+                                    <div class="language-dot active"></div>
+                                    <div class="language-dot active"></div>
+                                    <div class="language-dot active"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="language-item">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-semibold text-gray-800">English</span>
+                                    <span class="text-sm text-purple-600 font-medium">Fluent</span>
+                                </div>
+                                <div class="flex gap-1">
+                                    <div class="language-dot active"></div>
+                                    <div class="language-dot active"></div>
+                                    <div class="language-dot active"></div>
+                                    <div class="language-dot active"></div>
+                                    <div class="language-dot"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="language-item">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-semibold text-gray-800">Hindi</span>
+                                    <span class="text-sm text-purple-600 font-medium">Intermediate</span>
+                                </div>
+                                <div class="flex gap-1">
+                                    <div class="language-dot active"></div>
+                                    <div class="language-dot active"></div>
+                                    <div class="language-dot active"></div>
+                                    <div class="language-dot"></div>
+                                    <div class="language-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Certifications -->
+                    <div class="resume-card">
+                        <div class="resume-card-header">
+                            <i class="fas fa-certificate"></i>
+                            <h2>Certifications</h2>
+                        </div>
+                        <div class="resume-card-body">
+                            <div class="cert-item">
+                                <i class="fas fa-award text-yellow-500"></i>
+                                <div>
+                                    <div class="cert-title">PhD in Chemistry</div>
+                                    <div class="cert-org">Dhaka University</div>
+                                </div>
+                            </div>
+                            
+                            <div class="cert-item">
+                                <i class="fas fa-award text-blue-500"></i>
+                                <div>
+                                    <div class="cert-title">Teaching Excellence Award</div>
+                                    <div class="cert-org">2022</div>
+                                </div>
+                            </div>
+                            
+                            <div class="cert-item">
+                                <i class="fas fa-award text-green-500"></i>
+                                <div>
+                                    <div class="cert-title">Best Chemistry Mentor</div>
+                                    <div class="cert-org">2021</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Right Column -->
+                <div class="lg:col-span-2 space-y-8">
+                    
+                    <!-- Professional Summary -->
+                    <div class="resume-card">
+                        <div class="resume-card-header">
+                            <i class="fas fa-user"></i>
+                            <h2>Professional Summary</h2>
+                        </div>
+                        <div class="resume-card-body">
+                            <p class="text-gray-700 leading-relaxed">
+                                Highly experienced Chemistry educator with over 15 years of dedicated teaching experience specializing in HSC, undergraduate, and competitive exam preparation (BCS, Bank, and Government jobs). Proven track record of helping 5,000+ students achieve their academic and career goals with a 98% success rate. Expert in simplifying complex chemistry concepts through innovative teaching methodologies and personalized mentoring approaches.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience -->
+                    <div class="resume-card">
+                        <div class="resume-card-header">
+                            <i class="fas fa-briefcase"></i>
+                            <h2>Professional Experience</h2>
+                        </div>
+                        <div class="resume-card-body">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-period">2015 - Present</div>
+                                        <h3 class="timeline-title">Senior Chemistry Mentor</h3>
+                                        <div class="timeline-company">Chemistry Mentor Academy</div>
+                                        <ul class="timeline-description">
+                                            <li>Leading chemistry education programs for HSC and competitive exams</li>
+                                            <li>Developed comprehensive study materials and practice tests</li>
+                                            <li>Mentored 5,000+ students with 98% success rate</li>
+                                            <li>Specialized in BCS, Bank, and Government job exam preparation</li>
+                                            <li>Implemented innovative teaching methods improving student engagement by 85%</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-period">2010 - 2015</div>
+                                        <h3 class="timeline-title">Chemistry Instructor</h3>
+                                        <div class="timeline-company">Leading Coaching Center, Dhaka</div>
+                                        <ul class="timeline-description">
+                                            <li>Taught chemistry to HSC and undergraduate students</li>
+                                            <li>Developed curriculum and assessment materials</li>
+                                            <li>Conducted special workshops for competitive exam preparation</li>
+                                            <li>Achieved 95% student satisfaction rating</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-period">2008 - 2010</div>
+                                        <h3 class="timeline-title">Assistant Chemistry Teacher</h3>
+                                        <div class="timeline-company">Premier College, Dhaka</div>
+                                        <ul class="timeline-description">
+                                            <li>Assisted senior faculty in chemistry curriculum delivery</li>
+                                            <li>Conducted laboratory sessions and practical demonstrations</li>
+                                            <li>Provided individual tutoring to struggling students</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education -->
+                    <div class="resume-card">
+                        <div class="resume-card-header">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h2>Education</h2>
+                        </div>
+                        <div class="resume-card-body">
+                            <div class="education-item">
+                                <div class="education-degree">PhD in Chemistry</div>
+                                <div class="education-school">University of Dhaka</div>
+                                <div class="education-period">2015 - 2019</div>
+                                <p class="education-description">
+                                    Specialization in Organic Chemistry. Dissertation on "Advanced Synthesis Methods in Modern Organic Chemistry"
+                                </p>
+                            </div>
+                            
+                            <div class="education-item">
+                                <div class="education-degree">Master of Science in Chemistry</div>
+                                <div class="education-school">University of Dhaka</div>
+                                <div class="education-period">2006 - 2008</div>
+                                <p class="education-description">
+                                    CGPA: 3.92/4.00 | Thesis: "Chemical Kinetics and Reaction Mechanisms"
+                                </p>
+                            </div>
+                            
+                            <div class="education-item">
+                                <div class="education-degree">Bachelor of Science in Chemistry</div>
+                                <div class="education-school">University of Dhaka</div>
+                                <div class="education-period">2002 - 2006</div>
+                                <p class="education-description">
+                                    Honors in Chemistry | First Class | Dean's List recipient
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Achievements -->
+                    <div class="resume-card">
+                        <div class="resume-card-header">
+                            <i class="fas fa-trophy"></i>
+                            <h2>Key Achievements</h2>
+                        </div>
+                        <div class="resume-card-body">
+                            <div class="achievement-grid">
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="achievement-number">5,000+</div>
+                                    <div class="achievement-label">Students Mentored</div>
+                                </div>
+                                
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-percentage"></i>
+                                    </div>
+                                    <div class="achievement-number">98%</div>
+                                    <div class="achievement-label">Success Rate</div>
+                                </div>
+                                
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-medal"></i>
+                                    </div>
+                                    <div class="achievement-number">200+</div>
+                                    <div class="achievement-label">BCS Selections</div>
+                                </div>
+                                
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="achievement-number">4.9/5</div>
+                                    <div class="achievement-label">Student Rating</div>
+                                </div>
+                            </div>
+                            
+                            <div class="achievement-list">
+                                <div class="achievement-list-item">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span>Best Chemistry Educator Award 2021 & 2022</span>
+                                </div>
+                                <div class="achievement-list-item">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span>Published 5 research papers in international journals</span>
+                                </div>
+                                <div class="achievement-list-item">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span>Developed proprietary chemistry learning methodology</span>
+                                </div>
+                                <div class="achievement-list-item">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span>Trained 50+ chemistry teachers nationwide</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl"></div>
+        </div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="text-center">
+                <p class="text-gray-400">&copy; 2025 <span class="text-yellow-400 font-semibold">Chemistry Mentor</span>. All rights reserved.</p>
+                <p class="text-sm text-gray-500 mt-2">Empowering Students Since 2015</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- Resume Specific JavaScript -->
+    <script src="resume.js"></script>
+</body>
+</html>

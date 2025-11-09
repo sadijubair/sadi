@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Chemistry Mentor - Book Your Chemistry Classes for HSC, BCS & Government Jobs">
+    <title>Contact Us - Chemistry Mentor</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/60 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold gradient-text">Chemistry Mentor</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                    <a href="index.html#about" class="nav-link">About</a>
+                    
+                    <!-- Dropdown Menu -->
+                    <div class="relative dropdown">
+                        <button class="nav-link flex items-center gap-1" id="dropdown-btn">
+                            Courses
+                            <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="dropdown-menu hidden absolute top-full right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
+                            <a href="index.html#courses" class="dropdown-item">
+                                <i class="fas fa-graduation-cap text-purple-600"></i>
+                                <span>HSC Chemistry</span>
+                            </a>
+                            <a href="index.html#courses" class="dropdown-item">
+                                <i class="fas fa-university text-blue-600"></i>
+                                <span>Undergraduate</span>
+                            </a>
+                            <a href="index.html#courses" class="dropdown-item">
+                                <i class="fas fa-briefcase text-green-600"></i>
+                                <span>BCS Preparation</span>
+                            </a>
+                            <a href="index.html#courses" class="dropdown-item">
+                                <i class="fas fa-building text-orange-600"></i>
+                                <span>Bank Jobs</span>
+                            </a>
+                            <a href="index.html#courses" class="dropdown-item">
+                                <i class="fas fa-landmark text-red-600"></i>
+                                <span>Govt Jobs</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="index.html#testimonials" class="nav-link">Reviews</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="contact.html" class="btn-primary">Book a Class</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
+                <a href="index.html#home" class="mobile-nav-link">Home</a>
+                <a href="index.html#about" class="mobile-nav-link">About</a>
+                
+                <!-- Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-nav-link w-full text-left flex items-center justify-between" id="mobile-dropdown-btn">
+                        <span>Courses</span>
+                        <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                    </button>
+                    <div class="mobile-dropdown-menu hidden pl-4 mt-1 space-y-1">
+                        <a href="index.html#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-graduation-cap text-purple-600"></i>
+                            <span>HSC Chemistry</span>
+                        </a>
+                        <a href="index.html#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-university text-blue-600"></i>
+                            <span>Undergraduate</span>
+                        </a>
+                        <a href="index.html#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-briefcase text-green-600"></i>
+                            <span>BCS Preparation</span>
+                        </a>
+                        <a href="index.html#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-building text-orange-600"></i>
+                            <span>Bank Jobs</span>
+                        </a>
+                        <a href="index.html#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-landmark text-red-600"></i>
+                            <span>Govt Jobs</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="index.html#testimonials" class="mobile-nav-link">Reviews</a>
+                <a href="contact.html" class="mobile-nav-link bg-gray-100">Contact</a>
+                <a href="contact.html" class="btn-primary block text-center mt-4">Book a Class</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-purple-50 via-white to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="inline-block px-4 py-2 bg-purple-100 text-purple-600 rounded-full text-sm font-semibold mb-4">
+                    <i class="fas fa-envelope mr-2"></i>Get In Touch
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Contact <span class="gradient-text">Chemistry Mentor</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Have questions? Want to book a class? We're here to help you achieve your chemistry goals!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-2">Send Us a Message</h2>
+                        <p class="text-gray-600 mb-8">Fill out the form below and we'll get back to you within 24 hours</p>
+                        
+                        <form id="contact-form" class="space-y-6">
+                            <!-- Name -->
+                            <div>
+                                <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Full Name <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="name" name="name" required
+                                    class="contact-input"
+                                    placeholder="Enter your full name">
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Email Address <span class="text-red-500">*</span>
+                                </label>
+                                <input type="email" id="email" name="email" required
+                                    class="contact-input"
+                                    placeholder="your.email@example.com">
+                            </div>
+
+                            <!-- Phone -->
+                            <div>
+                                <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Phone Number <span class="text-red-500">*</span>
+                                </label>
+                                <input type="tel" id="phone" name="phone" required
+                                    class="contact-input"
+                                    placeholder="+880 1XXX-XXXXXX">
+                            </div>
+
+                            <!-- Course Interest -->
+                            <div>
+                                <label for="course" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Course Interest <span class="text-red-500">*</span>
+                                </label>
+                                <select id="course" name="course" required class="contact-input">
+                                    <option value="">Select a course</option>
+                                    <option value="hsc">HSC Chemistry</option>
+                                    <option value="undergraduate">Undergraduate Chemistry</option>
+                                    <option value="bcs">BCS Preparation</option>
+                                    <option value="bank">Bank Job Preparation</option>
+                                    <option value="govt">Government Job Preparation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <!-- Preferred Time -->
+                            <div>
+                                <label for="time" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Preferred Class Time
+                                </label>
+                                <select id="time" name="time" class="contact-input">
+                                    <option value="">Select preferred time</option>
+                                    <option value="morning">Morning (8 AM - 12 PM)</option>
+                                    <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                                    <option value="evening">Evening (4 PM - 8 PM)</option>
+                                    <option value="night">Night (8 PM - 10 PM)</option>
+                                </select>
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                                    Message <span class="text-red-500">*</span>
+                                </label>
+                                <textarea id="message" name="message" rows="5" required
+                                    class="contact-input"
+                                    placeholder="Tell us about your chemistry learning goals, current level, and any specific topics you need help with..."></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="w-full btn-primary-new text-lg py-4">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+
+                            <!-- Success Message -->
+                            <div id="success-message" class="hidden bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg">
+                                <i class="fas fa-check-circle mr-2"></i>
+                                Thank you! Your message has been sent successfully. We'll contact you soon.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <!-- Contact Cards -->
+                    <div class="contact-info-card">
+                        <div class="contact-icon bg-purple-100 text-purple-600">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Visit Us</h3>
+                            <p class="text-gray-600">
+                                123 Chemistry Street<br>
+                                Dhanmondi, Dhaka 1209<br>
+                                Bangladesh
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon bg-blue-100 text-blue-600">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Call Us</h3>
+                            <p class="text-gray-600">
+                                Mobile: +880 1XXX-XXXXXX<br>
+                                Hotline: +880 2-XXXXXXXX<br>
+                                Available: 9 AM - 9 PM (Daily)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon bg-green-100 text-green-600">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Email Us</h3>
+                            <p class="text-gray-600">
+                                General: info@chemistrymentor.com<br>
+                                Support: support@chemistrymentor.com<br>
+                                Admission: admission@chemistrymentor.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon bg-yellow-100 text-yellow-600">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Working Hours</h3>
+                            <p class="text-gray-600">
+                                Saturday - Thursday: 9 AM - 9 PM<br>
+                                Friday: 2 PM - 9 PM<br>
+                                Online classes available 24/7
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="bg-gradient-to-br from-purple-600 to-blue-600 rounded-2xl p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-4">Connect With Us</h3>
+                        <p class="mb-6 text-purple-100">Follow us on social media for daily chemistry tips and updates</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="social-media-btn">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-media-btn">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-media-btn">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-media-btn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-media-btn">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-media-btn">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Find Us on Map</h2>
+                <p class="text-xl text-gray-600">Visit our location for in-person classes and consultations</p>
+            </div>
+            
+            <!-- Map Placeholder -->
+            <div class="rounded-2xl overflow-hidden shadow-xl">
+                <div class="bg-gray-300 h-96 flex items-center justify-center">
+                    <div class="text-center">
+                        <i class="fas fa-map-marked-alt text-6xl text-gray-500 mb-4"></i>
+                        <p class="text-gray-600 text-lg">Google Maps Integration</p>
+                        <p class="text-gray-500 text-sm mt-2">Replace this with actual Google Maps embed code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-gray-600">Quick answers to common questions</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are your class timings?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer flexible class timings from 9 AM to 9 PM on weekdays and 2 PM to 9 PM on Fridays. Online classes are available 24/7 based on your convenience. We can schedule classes according to your preferred time slot.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer online classes?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We provide both online and offline classes. Our online classes use interactive platforms with video conferencing, digital whiteboards, and screen sharing for an effective learning experience. You can choose the mode that works best for you.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the fee structure?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our fees vary based on the course and class format (individual or group). HSC courses start from 3,000 BDT/month, while specialized BCS and job preparation courses range from 4,000-6,000 BDT/month. Contact us for detailed pricing and package options.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I get a trial class before enrolling?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We offer a free 30-minute trial class for all new students. This allows you to experience our teaching methodology and ask any questions about the course. Schedule your trial class by filling out the contact form above.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you provide study materials?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we provide comprehensive study materials including notes, practice questions, previous year papers, and digital resources. All materials are included in your course fee. We also share additional resources through our online learning portal.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How many students are in a batch?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We keep our batch sizes small to ensure personalized attention. Group classes have maximum 6-8 students per batch. We also offer one-on-one classes for students who prefer individual attention. You can choose based on your learning preference.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 gradient-text">Chemistry Mentor</h3>
+                    <p class="text-gray-400 mb-4">
+                        Expert Chemistry teaching for HSC, BCS, and Government job exams with proven results.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#home" class="footer-link">Home</a></li>
+                        <li><a href="index.html#about" class="footer-link">About</a></li>
+                        <li><a href="index.html#courses" class="footer-link">Courses</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Courses -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Courses</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#courses" class="footer-link">HSC Chemistry</a></li>
+                        <li><a href="index.html#courses" class="footer-link">Undergraduate</a></li>
+                        <li><a href="index.html#courses" class="footer-link">BCS Preparation</a></li>
+                        <li><a href="index.html#courses" class="footer-link">Bank & Govt Jobs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-envelope mr-2"></i>info@chemistrymentor.com</li>
+                        <li><i class="fas fa-phone mr-2"></i>+880 1XXX-XXXXXX</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Dhaka, Bangladesh</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Chemistry Mentor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isOpen = faqItem.classList.contains('active');
+                
+                // Close all FAQs
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked FAQ if it wasn't open
+                if (!isOpen) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Contact Form Submission
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Show success message
+            const successMsg = document.getElementById('success-message');
+            successMsg.classList.remove('hidden');
+            
+            // Reset form
+            e.target.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 5000);
+            
+            // Scroll to success message
+            successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Top 10 Chemistry Tips for HSC 2026 Students - Chemistry Mentor">
+    <title>Top 10 Chemistry Tips for HSC 2026 Students - Chemistry Mentor</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/60 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold gradient-text">Chemistry Mentor</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                    <a href="index.html#about" class="nav-link">About</a>
+                    
+                    <!-- Dropdown Menu -->
+                    <div class="relative dropdown">
+                        <button class="nav-link flex items-center gap-1" id="dropdown-btn">
+                            Courses
+                            <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="dropdown-menu hidden absolute top-full right-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
+                            <a href="index.html#courses" class="dropdown-item">
+                                <i class="fas fa-graduation-cap text-purple-600"></i>
+                                <span>HSC Chemistry</span>
+                            </a>
+                            <a href="index.html#courses" class="dropdown-item">
+                                <i class="fas fa-university text-blue-600"></i>
+                                <span>Undergraduate</span>
+                            </a>
+                            <a href="index.html#courses" class="dropdown-item">
+                                <i class="fas fa-briefcase text-green-600"></i>
+                                <span>BCS Preparation</span>
+                            </a>
+                            <a href="index.html#courses" class="dropdown-item">
+                                <i class="fas fa-building text-orange-600"></i>
+                                <span>Bank Jobs</span>
+                            </a>
+                            <a href="index.html#courses" class="dropdown-item">
+                                <i class="fas fa-landmark text-red-600"></i>
+                                <span>Govt Jobs</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <a href="blog.html" class="nav-link active">Blog</a>
+                    <a href="index.html#testimonials" class="nav-link">Reviews</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="index.html#contact" class="btn-primary">Book a Class</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
+                <a href="index.html#home" class="mobile-nav-link">Home</a>
+                <a href="index.html#about" class="mobile-nav-link">About</a>
+                
+                <!-- Mobile Dropdown -->
+                <div class="mobile-dropdown">
+                    <button class="mobile-nav-link w-full text-left flex items-center justify-between" id="mobile-dropdown-btn">
+                        <span>Courses</span>
+                        <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                    </button>
+                    <div class="mobile-dropdown-menu hidden pl-4 mt-1 space-y-1">
+                        <a href="index.html#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-graduation-cap text-purple-600"></i>
+                            <span>HSC Chemistry</span>
+                        </a>
+                        <a href="index.html#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-university text-blue-600"></i>
+                            <span>Undergraduate</span>
+                        </a>
+                        <a href="index.html#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-briefcase text-green-600"></i>
+                            <span>BCS Preparation</span>
+                        </a>
+                        <a href="index.html#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-building text-orange-600"></i>
+                            <span>Bank Jobs</span>
+                        </a>
+                        <a href="index.html#courses" class="mobile-dropdown-item">
+                            <i class="fas fa-landmark text-red-600"></i>
+                            <span>Govt Jobs</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <a href="blog.html" class="mobile-nav-link bg-gray-100">Blog</a>
+                <a href="index.html#testimonials" class="mobile-nav-link">Reviews</a>
+                <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+                <a href="index.html#contact" class="btn-primary block text-center mt-4">Book a Class</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Detail Content -->
+    <article class="pt-24 pb-16">
+        <!-- Breadcrumb -->
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <nav class="flex items-center gap-2 text-sm text-gray-600">
+                <a href="index.html" class="hover:text-purple-600">Home</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <a href="blog.html" class="hover:text-purple-600">Blog</a>
+                <i class="fas fa-chevron-right text-xs"></i>
+                <span class="text-gray-900">HSC Chemistry Tips</span>
+            </nav>
+        </div>
+
+        <!-- Blog Header -->
+        <header class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+            <div class="mb-6">
+                <span class="inline-block px-4 py-2 bg-purple-100 text-purple-600 rounded-full text-sm font-semibold mb-4">
+                    <i class="fas fa-graduation-cap mr-2"></i>HSC
+                </span>
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                Top 10 Chemistry Tips for HSC 2026 Students
+            </h1>
+            
+            <div class="flex flex-wrap items-center gap-6 text-gray-600 mb-8">
+                <div class="flex items-center gap-3">
+                    <img src="https://i.pravatar.cc/100?img=33" alt="Author" class="w-12 h-12 rounded-full border-2 border-purple-600">
+                    <div>
+                        <div class="font-semibold text-gray-900">Chemistry Mentor</div>
+                        <div class="text-sm">Expert Teacher</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 text-sm">
+                    <span><i class="far fa-calendar mr-2"></i>November 5, 2025</span>
+                    <span><i class="far fa-clock mr-2"></i>5 min read</span>
+                    <span><i class="far fa-eye mr-2"></i>1,234 views</span>
+                </div>
+            </div>
+
+            <!-- Featured Image -->
+            <div class="rounded-2xl overflow-hidden shadow-xl mb-8">
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1200&h=600&fit=crop" alt="HSC Chemistry Tips" class="w-full h-auto">
+            </div>
+
+            <!-- Share Buttons -->
+            <div class="flex items-center gap-3 pb-8 border-b border-gray-200">
+                <span class="font-semibold text-gray-700">Share:</span>
+                <a href="#" class="share-btn bg-blue-600 hover:bg-blue-700">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="share-btn bg-sky-500 hover:bg-sky-600">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="share-btn bg-blue-700 hover:bg-blue-800">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="share-btn bg-green-600 hover:bg-green-700">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <button class="share-btn bg-gray-600 hover:bg-gray-700" onclick="copyLink()">
+                    <i class="fas fa-link"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Blog Content -->
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="blog-content prose prose-lg max-w-none">
+                <p class="lead-text">
+                    Are you preparing for HSC 2026 Chemistry exam? Feeling overwhelmed with the vast syllabus and complex topics? Don't worry! In this comprehensive guide, I'll share the top 10 proven strategies that have helped thousands of my students achieve A+ grades in HSC Chemistry.
+                </p>
+
+                <h2>1. Master the Periodic Table First</h2>
+                <p>
+                    The periodic table is the foundation of chemistry. Before diving into complex topics, ensure you have a solid understanding of:
+                </p>
+                <ul>
+                    <li>Element symbols and their atomic numbers</li>
+                    <li>Group and period trends</li>
+                    <li>Valency and oxidation states</li>
+                    <li>Chemical bonding patterns</li>
+                </ul>
+                <p>
+                    <strong>Pro Tip:</strong> Create flashcards for the first 36 elements. Practice them daily until they become second nature. This will save you countless hours during problem-solving.
+                </p>
+
+                <h2>2. Understand, Don't Memorize</h2>
+                <p>
+                    Many students make the mistake of rote memorization. Instead, focus on understanding the underlying concepts. For example, when studying organic chemistry reactions, understand the mechanism rather than just memorizing the products.
+                </p>
+                <div class="info-box">
+                    <i class="fas fa-lightbulb"></i>
+                    <div>
+                        <strong>Quick Tip:</strong> Always ask yourself "Why?" after each concept. If you can explain it to someone else, you've truly understood it.
+                    </div>
+                </div>
+
+                <h2>3. Practice Numerical Problems Daily</h2>
+                <p>
+                    Chemistry is not just theory. Physical chemistry especially requires strong problem-solving skills. Dedicate at least 30 minutes daily to solving numerical problems from:
+                </p>
+                <ul>
+                    <li>Chemical kinetics and equilibrium</li>
+                    <li>Thermodynamics and thermochemistry</li>
+                    <li>Electrochemistry</li>
+                    <li>Mole concept and stoichiometry</li>
+                </ul>
+
+                <h2>4. Create Mind Maps for Organic Chemistry</h2>
+                <p>
+                    Organic chemistry can seem overwhelming with hundreds of reactions. Visual mind maps help you see connections between different reactions and functional groups. Start with a central functional group and branch out to all possible reactions.
+                </p>
+
+                <h2>5. Lab Work is Crucial</h2>
+                <p>
+                    Don't skip your practical classes! Understanding how reactions actually work in the lab gives you better conceptual clarity. Key practical tips:
+                </p>
+                <ul>
+                    <li>Observe color changes carefully</li>
+                    <li>Note down unusual observations</li>
+                    <li>Ask your teacher about unexpected results</li>
+                    <li>Practice writing practical notebooks neatly</li>
+                </ul>
+
+                <div class="warning-box">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div>
+                        <strong>Safety First:</strong> Always wear proper lab safety equipment and follow protocols. Chemistry labs can be dangerous if proper precautions aren't taken.
+                    </div>
+                </div>
+
+                <h2>6. Use Mnemonics for Tricky Concepts</h2>
+                <p>
+                    Mnemonics are memory aids that help you remember complex information. For example:
+                </p>
+                <ul>
+                    <li><strong>OIL RIG:</strong> Oxidation Is Loss, Reduction Is Gain (of electrons)</li>
+                    <li><strong>LEO says GER:</strong> Loss of Electrons is Oxidation, Gain of Electrons is Reduction</li>
+                    <li><strong>HONC 1234:</strong> Hydrogen-1, Oxygen-2, Nitrogen-3, Carbon-4 (common valencies)</li>
+                </ul>
+
+                <h2>7. Previous Year Papers Are Gold</h2>
+                <p>
+                    Solve at least the last 10 years of HSC Chemistry papers. This helps you:
+                </p>
+                <ul>
+                    <li>Understand question patterns</li>
+                    <li>Identify frequently asked topics</li>
+                    <li>Practice time management</li>
+                    <li>Build exam confidence</li>
+                </ul>
+                <p>
+                    Time yourself while solving papers. HSC Chemistry exam is 3 hours long, so practice completing papers within that time frame.
+                </p>
+
+                <h2>8. Join Study Groups</h2>
+                <p>
+                    Studying with peers can enhance your understanding. Teaching others is the best way to solidify your own knowledge. However, choose your study group wisely - ensure everyone is serious about preparation.
+                </p>
+
+                <h2>9. Take Care of Your Health</h2>
+                <p>
+                    All the study strategies won't help if you're exhausted. Maintain a healthy routine:
+                </p>
+                <ul>
+                    <li>Sleep 7-8 hours daily</li>
+                    <li>Exercise regularly (even 20 minutes helps)</li>
+                    <li>Eat nutritious meals</li>
+                    <li>Take short breaks during study sessions</li>
+                </ul>
+
+                <h2>10. Seek Help When Needed</h2>
+                <p>
+                    Don't hesitate to ask for help when you're stuck. Whether it's your teacher, a mentor, or online resources - getting clarification early prevents confusion from compounding.
+                </p>
+
+                <div class="success-box">
+                    <i class="fas fa-trophy"></i>
+                    <div>
+                        <strong>Remember:</strong> Consistency is key! Following these tips for just 2-3 months regularly will show remarkable improvement in your chemistry skills.
+                    </div>
+                </div>
+
+                <h2>Conclusion</h2>
+                <p>
+                    Mastering HSC Chemistry doesn't happen overnight, but with the right approach and consistent effort, you can definitely achieve your target grade. These 10 tips have been tested and proven by hundreds of my successful students over the years.
+                </p>
+                <p>
+                    Start implementing these strategies today, and remember - every expert was once a beginner. Stay focused, stay motivated, and success will follow!
+                </p>
+                <p>
+                    <strong>Need personalized guidance?</strong> Feel free to <a href="index.html#contact">contact me</a> for one-on-one coaching sessions tailored to your specific needs.
+                </p>
+            </div>
+
+            <!-- Tags -->
+            <div class="mt-12 pt-8 border-t border-gray-200">
+                <div class="flex flex-wrap gap-2">
+                    <span class="text-sm font-semibold text-gray-700 mr-2">Tags:</span>
+                    <a href="#" class="tag-badge">HSC Chemistry</a>
+                    <a href="#" class="tag-badge">Study Tips</a>
+                    <a href="#" class="tag-badge">Exam Preparation</a>
+                    <a href="#" class="tag-badge">Chemistry Tips</a>
+                    <a href="#" class="tag-badge">HSC 2026</a>
+                </div>
+            </div>
+
+            <!-- Author Bio -->
+            <div class="mt-12 p-8 bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <img src="https://i.pravatar.cc/150?img=33" alt="Author" class="w-24 h-24 rounded-full border-4 border-white shadow-lg">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">About the Author</h3>
+                        <p class="text-gray-700 mb-4">
+                            <strong>Chemistry Mentor</strong> is an experienced chemistry teacher with over 15 years of expertise in HSC, BCS, and Government job exam preparation. Having guided over 5,000 students to success, the mentor specializes in making complex chemistry concepts simple and easy to understand.
+                        </p>
+                        <div class="flex gap-3">
+                            <a href="#" class="text-purple-600 hover:text-purple-700"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-purple-600 hover:text-purple-700"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-purple-600 hover:text-purple-700"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments Section -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Comments (3)</h3>
+                
+                <!-- Comment 1 -->
+                <div class="comment-card">
+                    <div class="flex gap-4">
+                        <img src="https://i.pravatar.cc/60?img=5" alt="Commenter" class="w-12 h-12 rounded-full">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h4 class="font-semibold text-gray-900">Nusrat Ahmed</h4>
+                                <span class="text-sm text-gray-500">2 days ago</span>
+                            </div>
+                            <p class="text-gray-700">
+                                These tips are really helpful! I've been struggling with organic chemistry, but the mind map suggestion is brilliant. Thank you for sharing!
+                            </p>
+                            <button class="mt-2 text-sm text-purple-600 hover:text-purple-700 font-semibold">
+                                <i class="fas fa-reply mr-1"></i>Reply
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comment 2 -->
+                <div class="comment-card">
+                    <div class="flex gap-4">
+                        <img src="https://i.pravatar.cc/60?img=12" alt="Commenter" class="w-12 h-12 rounded-full">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h4 class="font-semibold text-gray-900">Rakib Hassan</h4>
+                                <span class="text-sm text-gray-500">1 week ago</span>
+                            </div>
+                            <p class="text-gray-700">
+                                Sir, your tips helped me score A+ in my trial exams! Especially the numerical practice strategy worked wonders. Highly recommend to all HSC students.
+                            </p>
+                            <button class="mt-2 text-sm text-purple-600 hover:text-purple-700 font-semibold">
+                                <i class="fas fa-reply mr-1"></i>Reply
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comment 3 -->
+                <div class="comment-card">
+                    <div class="flex gap-4">
+                        <img src="https://i.pravatar.cc/60?img=8" alt="Commenter" class="w-12 h-12 rounded-full">
+                        <div class="flex-1">
+                            <div class="flex items-center gap-3 mb-2">
+                                <h4 class="font-semibold text-gray-900">Fatima Khan</h4>
+                                <span class="text-sm text-gray-500">2 weeks ago</span>
+                            </div>
+                            <p class="text-gray-700">
+                                Can you please make a detailed video on electrochemistry? I find it very challenging. Thanks!
+                            </p>
+                            <button class="mt-2 text-sm text-purple-600 hover:text-purple-700 font-semibold">
+                                <i class="fas fa-reply mr-1"></i>Reply
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Comment Form -->
+                <div class="mt-8 p-6 bg-gray-50 rounded-xl">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-4">Leave a Comment</h4>
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-4 mb-4">
+                            <input type="text" placeholder="Your Name" class="form-input" required>
+                            <input type="email" placeholder="Your Email" class="form-input" required>
+                        </div>
+                        <textarea placeholder="Your Comment" rows="4" class="form-input mb-4" required></textarea>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane mr-2"></i>Post Comment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Related Posts -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Related Articles</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Related Post 1 -->
+                <article class="blog-post-card">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1532619187608-e5375cab36aa?w=800&h=500&fit=crop" alt="Organic Chemistry">
+                        <div class="blog-category-badge bg-purple-600">HSC</div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                            <span><i class="far fa-calendar mr-1"></i>Oct 25, 2025</span>
+                            <span><i class="far fa-clock mr-1"></i>7 min read</span>
+                        </div>
+                        <h3 class="blog-post-title">
+                            <a href="blog-detail.html">Mastering Organic Chemistry Reactions</a>
+                        </h3>
+                        <p class="blog-post-excerpt">
+                            Step-by-step guide to understanding and memorizing organic chemistry reactions with mechanism explanations.
+                        </p>
+                        <a href="blog-detail.html" class="blog-read-more">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Related Post 2 -->
+                <article class="blog-post-card">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=500&fit=crop" alt="Study Tips">
+                        <div class="blog-category-badge bg-yellow-600">Study Tips</div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                            <span><i class="far fa-calendar mr-1"></i>Nov 1, 2025</span>
+                            <span><i class="far fa-clock mr-1"></i>6 min read</span>
+                        </div>
+                        <h3 class="blog-post-title">
+                            <a href="blog-detail.html">How to Memorize Chemical Formulas Easily</a>
+                        </h3>
+                        <p class="blog-post-excerpt">
+                            Discover effective mnemonic techniques and memory tricks to remember complex chemical formulas.
+                        </p>
+                        <a href="blog-detail.html" class="blog-read-more">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Related Post 3 -->
+                <article class="blog-post-card">
+                    <div class="blog-post-image">
+                        <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=800&h=500&fit=crop" alt="Lab Safety">
+                        <div class="blog-category-badge bg-purple-600">HSC</div>
+                    </div>
+                    <div class="blog-post-content">
+                        <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                            <span><i class="far fa-calendar mr-1"></i>Oct 15, 2025</span>
+                            <span><i class="far fa-clock mr-1"></i>6 min read</span>
+                        </div>
+                        <h3 class="blog-post-title">
+                            <a href="blog-detail.html">Chemistry Lab Safety Rules</a>
+                        </h3>
+                        <p class="blog-post-excerpt">
+                            Essential safety guidelines for chemistry lab work and proper handling of chemicals.
+                        </p>
+                        <a href="blog-detail.html" class="blog-read-more">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 gradient-text">Chemistry Mentor</h3>
+                    <p class="text-gray-400 mb-4">
+                        Expert Chemistry teaching for HSC, BCS, and Government job exams with proven results.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#home" class="footer-link">Home</a></li>
+                        <li><a href="index.html#about" class="footer-link">About</a></li>
+                        <li><a href="index.html#courses" class="footer-link">Courses</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Courses -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Courses</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#courses" class="footer-link">HSC Chemistry</a></li>
+                        <li><a href="index.html#courses" class="footer-link">Undergraduate</a></li>
+                        <li><a href="index.html#courses" class="footer-link">BCS Preparation</a></li>
+                        <li><a href="index.html#courses" class="footer-link">Bank & Govt Jobs</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-envelope mr-2"></i>info@chemistrymentor.com</li>
+                        <li><i class="fas fa-phone mr-2"></i>+880 1XXX-XXXXXX</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Dhaka, Bangladesh</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Chemistry Mentor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Copy link functionality
+        function copyLink() {
+            navigator.clipboard.writeText(window.location.href);
+            alert('Link copied to clipboard!');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page Not Found - Chemistry Mentor">
+    <title>404 - Page Not Found | Chemistry Mentor</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans antialiased bg-gradient-to-br from-purple-50 via-white to-blue-50">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/60 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold gradient-text">Chemistry Mentor</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html#home" class="nav-link">Home</a>
+                    <a href="index.html#about" class="nav-link">About</a>
+                    <a href="index.html#courses" class="nav-link">Courses</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="contact.html" class="btn-primary">Book a Class</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
+                <a href="index.html#home" class="mobile-nav-link">Home</a>
+                <a href="index.html#about" class="mobile-nav-link">About</a>
+                <a href="index.html#courses" class="mobile-nav-link">Courses</a>
+                <a href="blog.html" class="mobile-nav-link">Blog</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="contact.html" class="btn-primary block text-center mt-4">Book a Class</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 404 Error Content -->
+    <section class="min-h-screen flex items-center justify-center px-4 py-24">
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- Animated 404 -->
+            <div class="error-animation mb-8">
+                <div class="error-number">
+                    <span class="number-4">4</span>
+                    <div class="number-0-container">
+                        <i class="fas fa-flask number-0"></i>
+                    </div>
+                    <span class="number-4">4</span>
+                </div>
+            </div>
+
+            <!-- Error Message -->
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+                Oops! Page Not Found
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Looks like this chemistry experiment went wrong! The page you're looking for has evaporated into thin air.
+            </p>
+
+            <!-- Search or Actions -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <a href="index.html" class="btn-primary-new inline-flex items-center justify-center">
+                    <i class="fas fa-home mr-2"></i>
+                    Back to Home
+                </a>
+                <a href="contact.html" class="btn-outline-new inline-flex items-center justify-center">
+                    <i class="fas fa-envelope mr-2"></i>
+                    Contact Us
+                </a>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Popular Pages</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="index.html#courses" class="error-link">
+                        <i class="fas fa-graduation-cap text-purple-600"></i>
+                        <div>
+                            <div class="font-semibold">Our Courses</div>
+                            <div class="text-sm text-gray-500">HSC, BCS & More</div>
+                        </div>
+                    </a>
+                    <a href="blog.html" class="error-link">
+                        <i class="fas fa-blog text-blue-600"></i>
+                        <div>
+                            <div class="font-semibold">Blog</div>
+                            <div class="text-sm text-gray-500">Chemistry Tips & Tricks</div>
+                        </div>
+                    </a>
+                    <a href="index.html#testimonials" class="error-link">
+                        <i class="fas fa-star text-yellow-600"></i>
+                        <div>
+                            <div class="font-semibold">Student Reviews</div>
+                            <div class="text-sm text-gray-500">Success Stories</div>
+                        </div>
+                    </a>
+                    <a href="index.html#about" class="error-link">
+                        <i class="fas fa-info-circle text-green-600"></i>
+                        <div>
+                            <div class="font-semibold">About Us</div>
+                            <div class="text-sm text-gray-500">Our Mission</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Fun Chemistry Fact -->
+            <div class="mt-12 p-6 bg-gradient-to-r from-purple-100 to-blue-100 rounded-xl max-w-2xl mx-auto">
+                <p class="text-sm text-purple-600 font-semibold mb-2">💡 Chemistry Fun Fact</p>
+                <p class="text-gray-700">
+                    Did you know? The only letter that doesn't appear on the periodic table is J!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 gradient-text">Chemistry Mentor</h3>
+                    <p class="text-gray-400">
+                        Expert Chemistry teaching for HSC, BCS, and Government job exams.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-envelope mr-2"></i>info@chemistrymentor.com</li>
+                        <li><i class="fas fa-phone mr-2"></i>+880 1XXX-XXXXXX</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Chemistry Mentor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
